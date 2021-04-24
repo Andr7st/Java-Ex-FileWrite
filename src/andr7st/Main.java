@@ -23,7 +23,7 @@ public class Main {
         
         System.out.println("Archivo escrito: Andr7st");
         
-        new andr7st.funciones.Escribir("Andr7st", contenido);
+        new andr7st.funciones.Escribir("Andr7st.txt", contenido);
     }
 }
 /*
