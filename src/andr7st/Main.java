@@ -1,39 +1,37 @@
-package paquete;
+package andr7st;
 /**
  * @author Andrés Segura.
- * @author Andr7st.
  * 
- * Escribir, mandar información a un archivo de texto.
+ * Escribir un archivo de texto plano.
  */
-import java.io.File;
-import java.io.PrintWriter;
-
 public class Main {
     public static void main(String[] args) {
+
         
-        Sistema sistema = new Sistema();
-
+        //Sistema sistema = new Sistema();
+        
         String contenido[] = new String[6];
-
+        
         contenido[0] = "Name:          Andrés Segura";
         contenido[1] = "Nickname:      Andr7st";
         contenido[2] = "Job:           Soldado CST SLR-B";
         contenido[3] = "Target:        Aprender a programar";
         contenido[4] = "Initial year:  2020";
         contenido[5] = "\nArchivo de texto generado desde un programa: created by Andr7st.";
-
-        sistema.ArchivoEscribir(contenido);
-
+        
+        //sistema.ArchivoEscribir(contenido);
+        
         System.out.println("Archivo escrito: Andr7st");
-
+        
+        new andr7st.funciones.Escribir("Andr7st", contenido);
     }
 }
-
+/*
 class Sistema {
 
     public void ArchivoEscribir(Object[] Contenido){
 
-        File ArchivoEscribir = new File("../Auxiliar/Andr7st.txt");
+        File ArchivoEscribir = new File("Andr7st.txt");
         
         try {
 
@@ -52,4 +50,4 @@ class Sistema {
             System.out.println(err.getMessage());
         }
     }
-}
+}*/
